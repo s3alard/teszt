@@ -143,4 +143,9 @@ p {
 a {
   color: darkgray;
   text-decoration: none;
+}
+
+.errors {
+  color: firebrick;
+  font-size: small;
 }/*# sourceMappingURL=test.css.map */

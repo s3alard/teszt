@@ -12,11 +12,15 @@
         <div class="bigbox">
         <div class="message">
             <h2 class="whitetext">Send us a message</h2>
-            <p><input type="text" placeholder="Name" class="inputs" ></p>
-            <p><input type="text" placeholder="Email" class="inputs" ></p>
-            <p><input type="text" placeholder="Subject" class="inputs" ></p>
+            <p><input type="text" placeholder="Name" class="inputs" id="name" ></p>
+            <div class="errors" id="error-name"></div>
+            <p><input type="text" placeholder="Email" class="inputs" id="email" ></p>
+            <div class="errors" id="error-email"></div>
+            <p><input type="text" placeholder="Subject" class="inputs" id="subject" ></p>
+            <div class="errors" id="error-subject"></div>
             <p><textarea placeholder="Message" id="message"  cols="30" rows="6" class="inputs"></textarea> </p>
-            <p><button type="button">Send Message</button></p>
+            <div class="errors" id="error-message"></div>
+            <p><button type="button" id="button">Send Message</button></p>
         </div>
         <div class="contacts">
             <h2><span class="underline">Cont</span>act us</h2>
@@ -40,5 +44,6 @@
         </div>
         </div>
     </div>
+    <script src="test.js"></script>
 </body>
 </html>
