@@ -1,0 +1,146 @@
+html{
+    font-family: sans-serif;
+    padding: 6%;
+}
+
+h1{ 
+    text-align: center;
+    font-weight: normal;
+    font-size:28px;
+    padding-bottom: 6%;
+}
+
+h2{
+    font-weight: normal; 
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.whitetext{
+color:white
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left:15%;
+}
+
+.savok{
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.bigbox{
+    width:100%;
+    display: flex;
+}
+
+.message,.contacts{
+    padding: 2rem;
+    width:50%;
+    box-sizing: border-box;
+}
+
+.message{
+    flex: 1;
+    border:2px;
+    justify-content: center;
+    background: linear-gradient(130deg,rgb(98, 27, 145)30%,rgba(36, 36, 155, 0.836));
+}
+
+.contacts{
+
+   margin-right: 20px;
+}
+
+.inputs{
+    color:white;
+    font-size: 16px;
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+background:transparent;
+    border-color: grey;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+}
+
+button{
+    color:white;
+    background-color:deeppink;
+    border-radius: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:0px;
+
+}
+
+button:hover {
+    background-color:rgb(133, 13, 77);
+    transition:ease-in-out ;
+}
+
+input:focus, textarea:focus {
+border:none;
+border-bottom:1px solid white;
+outline:none;
+}
+
+
+
+h4{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.grey{
+    color:lightgrey;
+}
+
+.darkergrey{
+    color:grey ;
+}
+
+.darkestgrey{
+    color:rgb(97, 99, 99);
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float:left;
+}
+
+p{
+    height: auto ;
+    width:auto;
+   
+}
+
+.underline{
+    border-bottom: 3px solid deeppink;
+}
+
+.text{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height:50px ;
+    width:300px;
+}
+
+a{
+    color:darkgray;
+    text-decoration: none;
+}
