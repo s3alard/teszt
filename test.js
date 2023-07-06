@@ -9,6 +9,8 @@ const errorEmail = document.getElementById('error-email')
 const errorSubject = document.getElementById('error-subject')
 const errorMessage = document.getElementById('error-message')
 
+var dataTable = document.getElementById('data-table');
+var tbody = dataTable.getElementsByTagName('tbody')[0];
 
 nameInput.addEventListener('blur', function(){
     if (nameInput.value ==='' || nameInput.value == null){
@@ -57,3 +59,27 @@ emailInput.addEventListener('blur', function(){
     button.disabled = false;
     }
    });
+
+   fetch('test.txt')
+   .then(function(response) {
+     return response.text();
+   })
+   .then(function(txtData) {
+     var lines = txtData.split('\n');
+ 
+     lines.forEach(function(line) {
+       var rowData = line.split('\t'); 
+ 
+       
+       var row = document.createElement('tr');
+ 
+       
+       rowData.forEach(function(value) {
+         var cell = document.createElement('td');
+         cell.textContent = value;
+         row.appendChild(cell);
+       });
+ 
+       tbody.appendChild(row);
+     });
+   })

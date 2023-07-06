@@ -21,8 +21,7 @@ color:white
 }
 
 body{
-    display:flex;
-    justify-content: center;
+
     margin-right: 15%;
     margin-left:15%;
 }
@@ -34,8 +33,10 @@ body{
 }
 
 .bigbox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width:100%;
-    display: flex;
 }
 
 .message,.contacts{
@@ -149,3 +150,43 @@ a{
     color:firebrick;
     font-size:  small ;
 }
+
+.table-box{
+    justify-content: center;
+}
+
+#data-table {
+    margin-top: 20px; 
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  #data-table th,
+  #data-table td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #data-table th {
+    font-weight: bold;
+  }
+  
+  #data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #data-table td {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: none;
+    border-right: none;
+  }
+  
+  #data-table td:first-child {
+    border-left: 2px solid #000;
+  }
+  
+  #data-table td:last-child {
+    border-right: 2px solid #000;
+  }
